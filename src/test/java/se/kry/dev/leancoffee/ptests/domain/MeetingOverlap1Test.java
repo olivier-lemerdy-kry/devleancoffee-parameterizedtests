@@ -8,7 +8,7 @@ import java.time.LocalTime;
 import java.time.Month;
 import org.junit.jupiter.api.Test;
 
-class MeetingOverlapTest {
+class MeetingOverlap1Test {
 
   private static final LocalDate JAN_1ST = LocalDate.of(2001, Month.JANUARY, 1);
 
