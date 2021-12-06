@@ -5,7 +5,9 @@ import spock.lang.Specification
 import java.time.LocalDateTime
 
 class MeetingSpockTest extends Specification {
+
     def "Meetings overlap"(String start1, String end1, String start2, String end2, boolean expectOverlap) {
+
         given:
         var meeting1 = new Meeting(
                 LocalDateTime.parse(start1),
