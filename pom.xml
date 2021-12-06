@@ -11,8 +11,15 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <gmavenplus-plugin.version>1.12.0</gmavenplus-plugin.version>
         <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
         <junit-jupiter-api.version>5.8.2</junit-jupiter-api.version>
+        <scala.version.major>2.13</scala.version.major>
+        <scala.version>${scala.version.major}.7</scala.version>
+        <scalatest.version>3.2.9</scalatest.version>
+        <spock-bom.version>2.0-groovy-3.0</spock-bom.version>
+        <testng.version>7.4.0</testng.version>
+        <scala-maven-plugin.version>4.5.4</scala-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -22,10 +29,20 @@
             <version>${hibernate-validator.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit-jupiter-api.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_${scala.version.major}</artifactId>
+            <version>${scalatest.version}</version>
         </dependency>
         <dependency>
             <groupId>org.spockframework</groupId>
@@ -40,7 +57,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -50,7 +67,7 @@
             <dependency>
                 <groupId>org.spockframework</groupId>
                 <artifactId>spock-bom</artifactId>
-                <version>2.0-groovy-3.0</version>
+                <version>${spock-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -60,9 +77,14 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>${scala-maven-plugin.version}</version>
+            </plugin>
+            <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.12.0</version>
+                <version>${gmavenplus-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
