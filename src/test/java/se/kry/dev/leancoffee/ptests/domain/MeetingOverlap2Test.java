@@ -15,10 +15,10 @@ class MeetingOverlap2Test {
   @Test
   void meeting_overlap() {
     Stream.of(
-        new MyTestParams(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(14, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(15, 0), true),
-        new MyTestParams(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(14, 0), JAN_1ST.atTime(15, 0), false),
-        new MyTestParams(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(15, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(14, 0), true),
-        new MyTestParams(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(14, 0), true)
+        new MyArguments(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(14, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(15, 0), true),
+        new MyArguments(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(14, 0), JAN_1ST.atTime(15, 0), false),
+        new MyArguments(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(15, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(14, 0), true),
+        new MyArguments(JAN_1ST.atTime(12, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(13, 0), JAN_1ST.atTime(14, 0), true)
     ).forEach(params ->
         doMeetingsOverlap(params.start1(), params.end1(), params.start2(), params.end2(), params.shouldOverlap()));
   }
@@ -34,7 +34,7 @@ class MeetingOverlap2Test {
 
 }
 
-record MyTestParams(LocalDateTime start1, LocalDateTime end1,
-                    LocalDateTime start2, LocalDateTime end2,
-                    boolean shouldOverlap) {
+record MyArguments(LocalDateTime start1, LocalDateTime end1,
+                   LocalDateTime start2, LocalDateTime end2,
+                   boolean shouldOverlap) {
 }
