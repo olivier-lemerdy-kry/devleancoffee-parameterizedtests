@@ -26,7 +26,7 @@ class MeetingConstructionTest {
   @Test
   void meeting_with_null_end_should_fail() {
     assertThrows(NullPointerException.class, () ->
-        new Meeting(FIRST_OF_JANUARY_AT_NOON, null));
+        new Meeting(FIRST_OF_JANUARY_AT_NOON, (LocalDateTime) null));
   }
 
   @Test
