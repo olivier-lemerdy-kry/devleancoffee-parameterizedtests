@@ -85,9 +85,15 @@ Pros
 
 * More flexibility in Samples creation (as it is code)
 
-Cons
+JUnit 5: `@ParameterizedTest @ArgumentsSource`
+----------------------------------------------
 
-*
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap6Test.java)
+
+Pros
+
+* More flexibility in Samples creation (as it is code)
+* Can factorize providers between multiple tests
 
 TestNG: `@DataProvider`
 -----------------------
