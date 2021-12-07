@@ -48,8 +48,8 @@ Cons
 * The test output does not contain any useful information if something fails
 * Not that easy to read
 
-JUnit 5: @ParameterizedTest @CsvSource
---------------------------------------
+JUnit 5: `@ParameterizedTest @CsvSource`
+----------------------------------------
 
 [LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap3Test.java)
 
@@ -124,8 +124,8 @@ Cons
 
 * Another language and tooling (but integrates well)
 
-ScalaTest: TableDrivenPropertyChecks
-------------------------------------
+ScalaTest: `TableDrivenPropertyChecks`
+--------------------------------------
 
 [Scala](https://www.scala-lang.org/) combines object-oriented and functional programming in one concise, high-level
 language. It has JVM & JS runtimes.
