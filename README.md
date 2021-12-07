@@ -61,12 +61,25 @@ Pros
 Cons
 
 * CSV input in annotation is not easy to read
+
+JUnit 5: `@ParameterizedTest @CsvFileSource`
+--------------------------------------------
+
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap4Test.java)
+
+Pros
+
+* Same advantages as `@CsvSource`
+* Can rely on CSV editor for readability
+
+Cons
+
 * CSV file is outside the test file, which is not ideal for small test samples
 
 JUnit 5: `@ParameterizedTest @MethodSource`
 -------------------------------------------
 
-[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap4Test.java)
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap5Test.java)
 
 Pros
 
