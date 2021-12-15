@@ -48,10 +48,25 @@ Cons
 * The test output does not contain any useful information if something fails
 * Not that easy to read
 
-JUnit 5: `@ParameterizedTest @CsvSource`
+JUnit 4: `@RunWith(Parameterized.class)`
 ----------------------------------------
 
 [LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap3Test.java)
+
+Pros
+
+* Factorize the tests
+
+Cons
+
+* Super verbose
+* Only one data source by test class
+* Only parameterized methods in the test class (otherwise, they would be run multiple times)
+
+JUnit 5: `@ParameterizedTest @CsvSource`
+----------------------------------------
+
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap4Test.java)
 
 Pros
 
@@ -65,7 +80,7 @@ Cons
 JUnit 5: `@ParameterizedTest @CsvFileSource`
 --------------------------------------------
 
-[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap4Test.java)
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap5Test.java)
 
 Pros
 
@@ -79,7 +94,7 @@ Cons
 JUnit 5: `@ParameterizedTest @MethodSource`
 -------------------------------------------
 
-[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap5Test.java)
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap6Test.java)
 
 Pros
 
@@ -88,7 +103,7 @@ Pros
 JUnit 5: `@ParameterizedTest @ArgumentsSource`
 ----------------------------------------------
 
-[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap6Test.java)
+[LET'S DEMO](src/test/java/se/kry/dev/leancoffee/ptests/domain/MeetingOverlap7Test.java)
 
 Pros
 
