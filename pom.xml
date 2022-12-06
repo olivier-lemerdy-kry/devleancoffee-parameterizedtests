@@ -12,13 +12,13 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <gmavenplus-plugin.version>1.12.0</gmavenplus-plugin.version>
-        <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
-        <junit-jupiter-api.version>5.8.2</junit-jupiter-api.version>
+        <hibernate-validator.version>7.0.5.Final</hibernate-validator.version>
+        <junit-jupiter-api.version>5.9.1</junit-jupiter-api.version>
         <scala.version.major>2.13</scala.version.major>
-        <scala.version>${scala.version.major}.7</scala.version>
-        <scalatest.version>3.2.9</scalatest.version>
-        <spock-bom.version>2.0-groovy-3.0</spock-bom.version>
-        <testng.version>7.4.0</testng.version>
+        <scala.version>${scala.version.major}.10</scala.version>
+        <scalatest.version>3.2.14</scalatest.version>
+        <spock-bom.version>2.3-groovy-3.0</spock-bom.version>
+        <testng.version>7.6.1</testng.version>
         <scala-maven-plugin.version>4.5.4</scala-maven-plugin.version>
     </properties>
 
